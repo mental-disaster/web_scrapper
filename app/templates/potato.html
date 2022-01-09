@@ -1,0 +1,26 @@
+<!DOCTYPE heml>
+<html>
+    <head>
+        <title>Data Search</title>
+        <script>
+            function loading(){
+                document.getElementById("loading").style.display ='block';
+                document.getElementById("content").style.display ='none';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="loading" style="display:none">
+            <img id="loading-image" src="/static/loadingimage.gif"/>
+            <h2>Searching Datas</h2>
+            <h3>please wait for a minite...</h3>
+        </div>
+        <div id="content" style="display:block">
+            <h1>Data Search</h1>
+            <form action="/report" method="get">
+                <input placeholder='Search for a data' required name="word"/>
+                <button onclick="loading();">Search</button>
+            </form>
+        </div>
+    </body>
+</html>

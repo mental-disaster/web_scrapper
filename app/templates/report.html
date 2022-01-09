@@ -1,0 +1,31 @@
+<!DOCTYPE heml>
+<html>
+    <head>
+        <title>Data Search</title>
+        <style>
+            section{
+                display:grid;
+                gap:20px;
+                grid-template-columns:repeat(4, 1fr);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Search Results</h1>
+        <h3>Found {{resultsNumber}} results for : {{searchingBy}}</h3>
+        <a href="/export?word={{searchingBy}}">Export to CSV</a><br>
+        <a href="/">return Home</a>
+        <section>
+            <h4>Title</h4>
+            <h4>Data sorce</h4>
+            <h4>Info</h4>
+            <h4>Details link</h4>
+            {% for data in datas %}
+            <span>{{data.title}}</span>
+            <span>{{data.source}}</span>
+            <span>{{data.info}}</span>
+            <a href="{{data.details_link}}" target="_blank">data link</a>
+            {% endfor %}
+        </section>
+    </body>
+</html>
