@@ -34,6 +34,6 @@ docker run -dp 5000:80 web-scrapper<br>
 ---
 
 노마드 코더 챌린지 통과<br>
-자세한 챌린지 코드는 https://replit.com/@mental-disaster/Day-Thirteen-and-Fourteen#main.py에서 확인할 수 있습니다.<br><br>
+자세한 챌린지 코드는 https://replit.com/@mental-disaster/Day-Thirteen-and-Fourteen#main.py 에서 확인할 수 있습니다.<br><br>
 
 <img src="https://user-images.githubusercontent.com/54014203/149989075-cb8e6c9b-45a4-4e40-959d-da7975ba4fd5.jpg"/>
